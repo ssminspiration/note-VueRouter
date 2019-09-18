@@ -4,7 +4,14 @@ module.exports = {
         sidebar:[
             ["/",'简介'],
             ["/pages/grammer/grammer",'markdown语法'],
-            ['/pages/VueRouter/router','学习笔记']
+            {
+                title:"路由学习笔记",
+                children:[
+                    ['/pages/VueRouter/nestRouter','嵌套路由'],
+                    ['/pages/VueRouter/router','导航守卫'],
+                ]
+            }
+           
         ]
     }
 }
